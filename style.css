@@ -147,4 +147,5 @@ h3 .ii{margin-left:8px}
 @media(max-width:700px){.ft5{grid-template-columns:repeat(2,1fr)}.sk{grid-template-columns:1fr}}
 .shw{overflow:auto;border:1px solid var(--line);border-radius:12px;margin:10px 0;max-height:520px}.sht{border-collapse:collapse;width:100%;min-width:560px}.sht th,.sht td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:0;white-space:nowrap}.sht th{background:var(--gs);font-size:12px;text-align:left;position:sticky;top:0;z-index:1}.sht .rn{width:36px;text-align:center;color:var(--mut);font-size:12px;padding:0 6px}
 .sht input,.sht select{width:100%;min-width:110px;border:0;background:transparent;color:var(--ink);font:500 13px Manrope,sans-serif;padding:9px 10px}.sht input:focus,.sht select:focus{outline:2px solid var(--gold);outline-offset:-2px;background:var(--card)}.sht th input{font-weight:700}.sht .x{padding:0 8px}
+.sht input[type=datetime-local]{min-width:210px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
