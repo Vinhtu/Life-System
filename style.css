@@ -163,4 +163,22 @@ h3 .ii{margin-left:8px}
 .mci{cursor:pointer}.mci:hover{background:var(--gs)}.xd{border:0;background:none;color:var(--bad);font:600 12px Manrope,sans-serif;cursor:pointer}
 .ovl.lg{background:var(--bg)}
 @media(max-width:700px){.bkr{grid-template-columns:1fr}}
+
+.mbar{display:none}.avb.sm{width:34px;height:34px;font-size:16px}.scrim{display:none}
+@media(max-width:900px){
+.mbar{display:flex;position:sticky;top:env(safe-area-inset-top,0px);z-index:30;align-items:center;gap:12px;padding:10px 14px;background:var(--card);border-bottom:1px solid var(--line)}
+.mbar .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);cursor:pointer;display:grid;place-items:center;flex:none;padding:0}
+.mbar .burger svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.mbar .ttl{font:600 20px 'Cormorant Garamond',Georgia,serif;flex:1;min-width:0}
+.side{position:fixed;left:0;top:0;bottom:0;width:272px;max-width:84vw;height:100%;z-index:50;flex-direction:column;overflow-y:auto;padding:calc(26px + env(safe-area-inset-top,0px)) 16px 26px;border-right:1px solid var(--line);border-bottom:0;transform:translateX(-102%);transition:transform .28s ease}
+.side.open{transform:none;box-shadow:0 0 40px rgba(0,0,0,.28)}
+.logo{display:flex}.sf{display:block}#nav{flex-direction:column}.nv span{display:inline}.nv::before{display:block}
+.scrim{position:fixed;inset:0;z-index:45;background:rgba(15,20,25,.45)}.scrim.on{display:block}
+}
+.er .avb{display:grid;color:var(--gold);font-size:20px}.er span.bd,.row span.bd{display:inline-block}
+h3{display:flow-root}
+main{min-width:0}
+@media(max-width:900px){.app{grid-template-columns:minmax(0,1fr)}.seg{flex-wrap:wrap;max-width:100%}.fb{gap:8px}.fb select,.fb input[type=date]{max-width:100%}}
+.sk input.sn{width:100%}
+@media(max-width:700px){.kb .fm{grid-template-columns:1fr 1fr!important}.kb .fm>input:first-child{grid-column:1/-1}.kb .fm>.x{grid-column:1/-1;justify-self:end}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
