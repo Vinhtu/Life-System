@@ -5,3 +5,15 @@ Dashboard theo dõi tiến độ hàng ngày: Calendar (khung giờ, check-in, c
 - Mở `index.html` trong trình duyệt (cần internet để tải Chart.js và font).
 - Dữ liệu hiện là dữ liệu mẫu, tạo trong `app.js` (hàm `mk`). Khi nối Google Sheet, thay phần này bằng dữ liệu đọc từ Sheet.
 - Lịch ở mục Calendar lưu trong localStorage của trình duyệt.
+
+## Lưu dữ liệu trên Vercel (đồng bộ nhiều thiết bị)
+
+Mặc định dữ liệu nằm trong trình duyệt (localStorage). Để lưu trên Vercel:
+
+1. Push code này (có thư mục `api/`) lên GitHub để Vercel deploy.
+2. Trong Vercel: mở project, vào **Storage**, chọn **Upstash Redis** (Marketplace), tạo và **Connect** vào project. Vercel tự thêm biến môi trường `KV_REST_API_URL` và `KV_REST_API_TOKEN`.
+3. Vào **Settings, Environment Variables**, thêm `SYNC_PASSWORD` với một chuỗi bí mật do bạn tự đặt (đây là mã đồng bộ).
+4. **Redeploy** project để các biến có hiệu lực.
+5. Mở web đã deploy, vào **Cài đặt, Đồng bộ dữ liệu lên Vercel**, nhập mã đồng bộ, tick bật và bấm **Lưu và kết nối**.
+
+Lưu ý: toàn bộ dữ liệu được lưu thành một bản ghi, giới hạn khoảng 900KB. Ảnh tải lên trong phần Phân tích chiếm nhiều dung lượng, nên ưu tiên dán URL ảnh. Mã đồng bộ chỉ lưu trong trình duyệt từng thiết bị.
