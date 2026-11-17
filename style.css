@@ -181,4 +181,7 @@ main{min-width:0}
 @media(max-width:900px){.app{grid-template-columns:minmax(0,1fr)}.seg{flex-wrap:wrap;max-width:100%}.fb{gap:8px}.fb select,.fb input[type=date]{max-width:100%}}
 .sk input.sn{width:100%}
 @media(max-width:700px){.kb .fm{grid-template-columns:1fr 1fr!important}.kb .fm>input:first-child{grid-column:1/-1}.kb .fm>.x{grid-column:1/-1;justify-self:end}}
+.ovb .fm{display:grid;justify-content:stretch;gap:10px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.bf{display:grid;grid-template-columns:1fr;gap:10px;margin-top:4px}.bf .bt{width:100%}.ovb p{margin:0 0 12px}
