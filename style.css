@@ -185,3 +185,12 @@ main{min-width:0}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 .bf{display:grid;grid-template-columns:1fr;gap:10px;margin-top:4px}.bf .bt{width:100%}.ovb p{margin:0 0 12px}
+
+.vis{display:grid;grid-template-columns:minmax(230px,300px) minmax(0,1fr);gap:22px;align-items:start;margin-top:6px}
+.vdn{display:grid;justify-items:center;gap:14px;padding:16px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,var(--card),color-mix(in srgb,var(--gold) 6%,var(--card)))}
+.vlg{display:grid;gap:8px;width:100%}.lgi{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mut)}.lgi i{width:10px;height:10px;border-radius:50%;flex:none}.lgi b{margin-left:auto;color:var(--ink);font-variant-numeric:tabular-nums}
+.vcb{min-width:0;padding:14px 14px 6px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.abar{transition:opacity .2s}.abar:hover{opacity:.78}circle{transition:r .15s}
+@media(max-width:800px){.vis{grid-template-columns:1fr}.vdn{grid-template-columns:auto 1fr;justify-items:start;align-items:center}}
+
+@media(max-width:800px){.vcb{overflow-x:auto;-webkit-overflow-scrolling:touch}.vcb svg{min-width:560px}}
